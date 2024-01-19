@@ -16,15 +16,14 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
     </AnchorLink>
   );
 };
-// eslint-disable-next-line
-const Navbar = ({ selectedPage, setSelectedPage }) => {
-  // eslint-disable-next-line
+
+const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
-  // eslint-disable-next-line
   const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
+  const navbarBackground = isTopOfPage ? "" : "bg-red";
 
   return (
-    <nav className={`z-40 w-full fixed top-0 py-6`}>
+    <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
         <h4 className="font-playfair text-3xl font-bold">BRH</h4>
 
@@ -36,9 +35,65 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
+            <Link
+              page="Skills"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+            <Link
+              page="Projects"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+            <Link
+              page="Contact"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
           </div>
         ) : (
-          <div></div>
+          <button
+            className="rounded-full flex bg-red p-2"
+            onClick={() => setIsMenuToggled(!isMenuToggled)}
+          >
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        )}
+
+        {/* MOBILE MENU POP-OUT */}
+        {!isAboveSmallScreens && isMenuToggled && (
+          <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
+            {/* CLOSE ICON */}
+            <div className="flex justify-end px-10 py-8">
+              <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
+                <span class="material-symbols-outlined">close</span>
+              </button>
+            </div>
+
+            {/* MENU ITEMS */}
+            <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue">
+              <Link
+                page="Home"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Skills"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Projects"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Contact"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+            </div>
+          </div>
         )}
       </div>
     </nav>
