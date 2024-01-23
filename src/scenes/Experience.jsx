@@ -29,10 +29,9 @@ const MySkills = () => {
           {isAboveMediumScreens ? (
             <div className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-20 before:w-full md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]">
               <img
-                className="z-10"
-                width="600px"
-                src="assets/skills-image.png"
                 alt="skills"
+                className="z-10"
+                src="assets/skills-image.png"
               />
             </div>
           ) : (
