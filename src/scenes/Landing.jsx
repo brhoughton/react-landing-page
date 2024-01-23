@@ -8,7 +8,7 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center gap-16 md:mt-10 py-10"
+      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
     >
       {/* IMAGE SECTION */}
       <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
@@ -48,7 +48,7 @@ const Landing = ({ setSelectedPage }) => {
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
             Breck Houghton
           </p>
-          <p className="mt-10 mb-7 text-sm text-left md:text-start leading-6">
+          <p className="mt-10 mb-7 text-sm text-center md:text-start">
             Hi! My name is Breck and I'm a seasoned Creative Director and
             Front-End Developer with a passion for bringing ideas to life
             through a blend of creativity and technology. With a strong
@@ -88,6 +88,7 @@ const Landing = ({ setSelectedPage }) => {
             </div>
           </AnchorLink>
         </motion.div>
+
         <motion.div
           className="flex mt-5 justify-center md:justify-start"
           initial="hidden"
