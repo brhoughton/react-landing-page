@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
-import useMediaQuery from "./hooks/useMediaQuery";
 import Navbar from "./scenes/Navbar";
+import Experience from "./scenes/Experience";
+import Contact from "./scenes/Contact";
+import useMediaQuery from "./hooks/useMediaQuery";
 import LineGradient from "./components/LineGradient";
-import MySkills from "./scenes/MySkills";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -39,7 +40,11 @@ function App() {
       </div>
       <LineGradient />
       <div className="w-5/6 mx-auto md:h-full">
-        <MySkills />
+        <Experience />
+      </div>
+      <LineGradient />
+      <div className="">
+        <Contact />
       </div>
     </div>
   );
