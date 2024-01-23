@@ -63,7 +63,7 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-green-500 absolute right-0 top-0 z-[-1]"></div>
           </div>
-          <p className="mt-5 text-sm text-left leading-6">
+          <p className="mt-5 text-left leading-7">
             Honed over many years of hands-on experience and continued
             education, I've navigated the evolving landscape of design and
             technology, seamlessly integrating my expertise in front-end
@@ -92,7 +92,7 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]"></div>
           </div>
-          <p className="mt-5 text-sm text-left leading-6">
+          <p className="mt-5 text-left leading-7">
             As a Creative Director, my aim is to continually challenge and
             inspire, fostering an environment where creativity thrives,
             innovation flourishes, and every project tells a compelling story.
@@ -120,7 +120,7 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-purple-600 absolute right-0 top-0 z-[-1]"></div>
           </div>
-          <p className="mt-5 text-sm text-left leading-6">
+          <p className="mt-5 text-left leading-7">
             Motion design has allowed me to craft dynamic visual narratives that
             leave a lasting impact, while my proficiency in 3D modeling and
             rendering adds depth and realism to projects, elevating them to new

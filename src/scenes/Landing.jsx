@@ -45,10 +45,10 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-playfair z-10 text-center md:text-start">
+          <p className="text-6xl font-playfair z-10 md:text-start">
             Breck Houghton
           </p>
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
+          <p className="mt-10 mb-7 md:text-start leading-7">
             Hi! My name is Breck and I'm a seasoned Creative Director and
             Front-End Developer with a passion for bringing ideas to life
             through a blend of creativity and technology. With a strong
@@ -60,7 +60,7 @@ const Landing = ({ setSelectedPage }) => {
 
         {/* CALL TO ACTIONS */}
         <motion.div
-          className="flex mt-5 justify-center md:justify-start"
+          className="flex mt-5 justify-left md:justify-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -90,7 +90,7 @@ const Landing = ({ setSelectedPage }) => {
         </motion.div>
 
         <motion.div
-          className="flex mt-5 justify-center md:justify-start"
+          className="flex mt-5 justify-left md:justify-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

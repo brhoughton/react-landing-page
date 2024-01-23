@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
 import Navbar from "./scenes/Navbar";
 import Experience from "./scenes/Experience";
 import Contact from "./scenes/Contact";
+import Footer from "./scenes/Footer";
 import useMediaQuery from "./hooks/useMediaQuery";
 import LineGradient from "./components/LineGradient";
 
@@ -43,9 +45,16 @@ function App() {
         <Experience />
       </div>
       <LineGradient />
-      <div className="">
-        <Contact />
+      <div className="w-5/6 mx-auto md:h-full">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("contact")}
+        >
+          <Contact />
+        </motion.div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -18,9 +18,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-48">
+    <section id="contact" className="contact py-48">
       {/* HEADINGS */}
       <motion.div
+        className="flex justify-start w-full"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -31,10 +32,10 @@ const Contact = () => {
         }}
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl">
-            <span className="text-yellow">CONTACT ME</span> TO GET STARTED
+          <p className="font-playfair font-semibold text-4xl mb-5">
+            CONTACT <span className="text-red">ME</span>
           </p>
-          <div className="flex md:justify-end my-5">
+          <div className="flex md:justify-start my-5">
             <LineGradient width="w-1/2" />
           </div>
         </div>
@@ -74,7 +75,7 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
+              className="w-full bg-blue font-semibold text-sm placeholder-white p-3"
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -90,7 +91,7 @@ const Contact = () => {
             )}
 
             <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-blue font-semibold text-sm placeholder-white p-3 mt-5"
               type="text"
               placeholder="EMAIL"
               {...register("email", {
@@ -106,7 +107,7 @@ const Contact = () => {
             )}
 
             <textarea
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-blue font-semibold text-sm placeholder-white p-3 mt-5"
               name="message"
               placeholder="MESSAGE"
               rows="4"
