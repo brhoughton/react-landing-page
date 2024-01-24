@@ -61,7 +61,7 @@ const MySkills = () => {
                 Front-End
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-green absolute right-0 top-0 z-[-1]"></div>
+            <div className="w-1/2 md:w-3/4 h-32 bg-orange absolute right-0 top-0 z-[-1]"></div>
           </div>
           <p className="mt-5 text-left leading-7">
             Honed over many years of hands-on experience and continued
@@ -118,7 +118,7 @@ const MySkills = () => {
                 Render
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-purple-600 absolute right-0 top-0 z-[-1]"></div>
+            <div className="w-1/2 md:w-3/4 h-32 bg-purple absolute right-0 top-0 z-[-1]"></div>
           </div>
           <p className="mt-5 text-left leading-7">
             Motion design has allowed me to craft dynamic visual narratives that

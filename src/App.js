@@ -7,7 +7,6 @@ import Contact from "./scenes/Contact";
 import Footer from "./scenes/Footer";
 import Projects from "./scenes/Projects";
 import useMediaQuery from "./hooks/useMediaQuery";
-import LineGradient from "./components/LineGradient";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
