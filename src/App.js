@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
 import Navbar from "./scenes/Navbar";
 import Experience from "./scenes/Experience";
@@ -12,7 +11,6 @@ import LineGradient from "./components/LineGradient";
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
-  // eslint-disable-next-line
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   useEffect(() => {
@@ -32,12 +30,7 @@ function App() {
         setSelectedPage={setSelectedPage}
       />
       <div className="w-5/6 mx-auto md:h-full">
-        {isAboveMediumScreens && (
-          <DotGroup
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
-          />
-        )}
+        {isAboveMediumScreens}
         <Landing setSelectedPage={setSelectedPage} />
       </div>
       <LineGradient />

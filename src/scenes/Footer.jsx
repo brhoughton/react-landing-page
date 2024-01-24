@@ -9,8 +9,8 @@ const Footer = () => {
           <p className="font-playfair font-semibold text-2xl text-yellow">
             Breck Houghton
           </p>
-          <p className="font-playfair text-md text-white">
-            ©2024 Houghton. All Rights Reserved
+          <p className="font-playfair text-sm text-white pt-5">
+            ©2024 Breck Houghton. All Rights Reserved
           </p>
         </div>
       </div>
