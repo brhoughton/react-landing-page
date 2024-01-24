@@ -10,6 +10,7 @@ export default {
         yellow: "#F1FA8C",
         grey: "#282A36",
         green: "#50FA7B",
+        dark: "#282A36",
         "deep-blue": "#010026",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35",

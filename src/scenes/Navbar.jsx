@@ -41,6 +41,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               setSelectedPage={setSelectedPage}
             />
             <Link
+              page="Projects"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+            <Link
               page="Contact"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
@@ -57,7 +62,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
         {/* MOBILE MENU POP-OUT */}
         {!isAboveSmallScreens && isMenuToggled && (
-          <div className="fixed right-0 bottom-0 h-full bg-grey w-[300px]">
+          <div className="fixed right-0 bottom-0 h-full bg-dark w-[300px]">
             {/* CLOSE ICON */}
             <div className="flex justify-end px-10 py-8">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
@@ -74,6 +79,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               />
               <Link
                 page="Experience"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Projects"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />

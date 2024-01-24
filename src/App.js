@@ -5,6 +5,7 @@ import Navbar from "./scenes/Navbar";
 import Experience from "./scenes/Experience";
 import Contact from "./scenes/Contact";
 import Footer from "./scenes/Footer";
+import Projects from "./scenes/Projects";
 import useMediaQuery from "./hooks/useMediaQuery";
 import LineGradient from "./components/LineGradient";
 
@@ -33,12 +34,16 @@ function App() {
         {isAboveMediumScreens}
         <Landing setSelectedPage={setSelectedPage} />
       </div>
-      <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
+
+      <div className="w-5/6 mx-auto">
         <Experience />
       </div>
-      <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
+
+      <div className="w-5/6 mx-auto">
+        <Projects />
+      </div>
+
+      <div className="w-5/6 mx-auto">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
